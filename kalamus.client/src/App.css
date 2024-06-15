@@ -130,13 +130,12 @@ a.menu :hover {
 /* Main Side */
 
 .mainside {
-    
+    margin-left: 295px;
     background-color: #f0f1f3;
     padding: 20px 20px 0 20px;
 }
 
 .mainContent {
-    margin-left:295px;
     background-color: #f0f1f3;
     margin-top: 20px;
     overflow-y: auto;
@@ -232,7 +231,7 @@ a.menu :hover {
 }
 .cardValue p{
     margin-top:20px;
-    font-size:18px !important;
+    font-size:16px !important;
 }
 
 .messInfo {
@@ -271,50 +270,7 @@ a.menu :hover {
 
 
 /*Calendar*/
-.calendarContainer {
-    max-width: 100%;
-    background-color: white;
-    padding: 15px 0px 15px 0px;
-    border-radius: 15px;
-    margin-left: 20px;
-}
-.cell {
-    padding: 10px;
-    text-align: center;
-    cursor: pointer;
-    max-width:14%;
-}
 
-    .cell.disabled {
-        color: #ccc;
-    }
-
-    .cell.selected {
-        background-color: #9235ff;
-        color: white;
-        border-radius: 15px;
-
-    }
-
-.header {
-    margin-bottom: 20px;
-}
-
-.days {
-    background-color: #f1f1f1;
-}
-
-.number {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    line-height: 30px;
-    border-radius: 50%;
-}
-
-.days .col {
-    max-width: 14%;
-}
 
 /*-------------------------------*/
 
@@ -351,6 +307,9 @@ a.menu :hover {
 }
 
 @media (max-width: 980px) {
+    .mainside{
+        margin-left:0px;
+    }
     .mainContent {
         margin-left: 0px;
     }
@@ -372,9 +331,7 @@ a.menu :hover {
     }
 }
 @media(min-width:981px){
-    .mainContent {
-        margin-left: 295px;
-    }
+
     .mobileLogo{
         display:none;
     }
@@ -394,11 +351,3 @@ a.menu :hover {
 
 /*Calendar Page*/
 
-.calendarPageWrapper{
-    margin-left:295px;
-    background-color: white;
-    border-radius:15px;
-}
-.calendarMain{
-    height:100px;
-}

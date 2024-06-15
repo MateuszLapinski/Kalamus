@@ -50,13 +50,13 @@ const Calendar = ({ local }) => {
         <div>
             <Row className="header row">
                 <Col className="col-start">
-                    <Button variant="light" onClick={prevMonth}>{"<"}</Button>
+                    <Button className="calendarButton" variant="light" onClick={prevMonth}>{"<"}</Button>
                 </Col>
                 <Col className="col-center">
                     <span>{format(currentDate, "MMMM yyyy")}</span>
                 </Col>
                 <Col className="col-end">
-                    <Button variant="light" onClick={nextMonth}>{">"}</Button>
+                    <Button className="calendarButton" variant="light" onClick={nextMonth}>{">"}</Button>
                 </Col>
             </Row>
             <Row className="days row">

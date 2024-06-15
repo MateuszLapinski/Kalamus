@@ -15,9 +15,7 @@ export default function SidePane() {
             <SideButton imagesrc="/Image/users.png" linkto='/clients'>
                 Clients
             </SideButton>
-            <SideButton imagesrc="/Image/dashboard.png" linkto='/meetings'>
-                Meetings
-            </SideButton>
+            
             <SideButton imagesrc="/Image/messenger.png" linkto='/messenges'>
                 Messenges
             </SideButton>

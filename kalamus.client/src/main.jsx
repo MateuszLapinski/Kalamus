@@ -8,9 +8,12 @@ import Sale from './pages/sale.jsx'
 import Task from './pages/tasks.jsx'
 import Messenges from './pages/messenges.jsx'
 import './index.css'
+import './calendar.css'
+import './clients.css'
+import './sales.css'
+import './messenges.css'
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Layout } from './layout/layout.jsx';
-import Meetings from './pages/meetings.jsx';
 import Notes from './pages/notes.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -38,9 +41,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
                 <Route path="/raports" element={<Layout />}>
                     <Route index element={<Raport />} />
                 </Route>
-                <Route path="/meetings" element={<Layout />}>
-                    <Route index element={<Meetings />} />
-                </Route>
+                
                 <Route path="/notes" element={<Layout />}>
                     <Route index element={<Notes />} />
                 </Route>
